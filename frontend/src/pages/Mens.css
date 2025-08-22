@@ -1,0 +1,192 @@
+h2{
+    text-align: center;
+    margin-top: 36px;
+    color: #3a3636;
+    font-weight: 600;
+    size: 28px;
+    line-height: 35px;
+    font-style: normal; 
+}
+h5{
+    font-weight: 600;
+    font-family: "Source Code Pro", monospace;
+    color: #4e4d4d;
+    font-size: 13px;
+    line-height: 15px;
+    margin-top: 2px;
+    margin-bottom: 6px;
+}
+.box hr {
+    border: none;
+    border-top: 1px solid #d3d1d1; /* Light gray line */
+    margin-top: -4px;
+    margin-bottom: 1px;
+}
+.box span{
+    font-weight: 400;
+    font-family: "Source Code Pro", monospace;
+    color: #6b6969;
+    font-size: 13px;
+    line-height: 23px;
+}
+ .box h3{
+    font-weight: 600;
+    font-family: "Source Code Pro", monospace;
+    color: #464545;
+    font-size: 13px;
+    /* line-height: 23px; */
+    margin-top: 4px;
+} 
+
+
+.naproducts-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden; /* Hide overflowing products */
+    margin: 20px auto;
+}
+.naproducts {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns */
+    gap: 20px; /* Add space between the boxes */
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 40px;
+}
+
+.box {
+    text-align: center;
+    cursor: pointer;
+}
+.box img{
+    width: 100%;
+    height: 473px;
+}
+
+/* T-shirts */
+
+.mensroducts-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden; /* Hide overflowing products */
+    margin: 20px auto;
+}
+.mensproducts {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 4 columns */
+    gap: 20px; /* Add space between the boxes */
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 40px;
+}
+
+.mensbox {
+    text-align: center;
+    cursor: pointer;
+}
+.mensbox img{
+    width: 100%;
+    height: 350px;
+    border-radius: 22px;
+} 
+.mensbox h5{
+    font-weight: 600;
+    font-family: "Source Code Pro", monospace;
+    color: #4e4d4d;
+    font-size: 13px;
+    line-height: 15px;
+    margin-top: 2px;
+    margin-bottom: 6px;
+}
+.mensbox hr {
+    border: none;
+    border-top: 1px solid #d3d1d1; /* Light gray line */
+    margin-top: -4px;
+    margin-bottom: 1px;
+}
+.mensbox span{
+    font-weight: 400;
+    font-family: "Source Code Pro", monospace;
+    color: #6b6969;
+    font-size: 13px;
+    line-height: 23px;
+}
+.mensbox h3{
+    font-weight: 600;
+    font-family: "Source Code Pro", monospace;
+    color: #464545;
+    font-size: 13px;
+    /* line-height: 23px; */
+    margin-top: 4px;
+}
+.mensbox span:last-child{
+    font-weight: 400;
+    font-family: "Source Code Pro", monospace;
+    color: #6b6969;
+    font-size: 13px;
+    line-height: 23px;
+}
+
+
+/*Jeans*/
+.mensjeans-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden; /* Hide overflowing products */
+    margin: 20px auto;
+}
+.mensjeans {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 4 columns */
+    gap: 20px; /* Add space between the boxes */
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 40px;
+}
+
+.mensbox {
+    text-align: center;
+    cursor: pointer;
+}
+.mensbox img{
+    width: 100%;
+    height: 350px;
+    border-radius: 22px;
+} 
+.mensbox h5{
+    font-weight: 600;
+    font-family: "Source Code Pro", monospace;
+    color: #4e4d4d;
+    font-size: 13px;
+    line-height: 15px;
+    margin-top: 2px;
+    margin-bottom: 6px;
+}
+.mensbox hr {
+    border: none;
+    border-top: 1px solid #d3d1d1; /* Light gray line */
+    margin-top: -4px;
+    margin-bottom: 1px;
+}
+.mensbox span{
+    font-weight: 400;
+    font-family: "Source Code Pro", monospace;
+    color: #6b6969;
+    font-size: 13px;
+    line-height: 23px;
+}
+.mensbox h3{
+    font-weight: 600;
+    font-family: "Source Code Pro", monospace;
+    color: #464545;
+    font-size: 13px;
+    /* line-height: 23px; */
+    margin-top: 4px;
+}
+.mensbox span:last-child{
+    font-weight: 400;
+    font-family: "Source Code Pro", monospace;
+    color: #6b6969;
+    font-size: 13px;
+    line-height: 23px;
+}

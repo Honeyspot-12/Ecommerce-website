@@ -1,0 +1,328 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    overflow: visible;
+}
+.navbar {
+    position: sticky; /* Ensure this does not conflict with sticky */
+    overflow: visible;
+  }
+.topheader {
+    position: relative; 
+    background-color: rgb(122, 6, 151);
+    display: flex;
+    color: white;
+    width: 100%;
+    height: 60px;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+}
+.topheader ul {
+    display: flex;
+    list-style: none;
+}
+
+.topheader ul li {
+    padding: 10px;
+}
+
+.topheader ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+.tcd {
+    margin-right: 11%;
+}
+
+.tcd ul li {
+    padding: 0px 16px;
+    font-size: 13px;
+    font-family: "Source Code Pro", monospace;
+    line-height: 20px;
+}
+
+.tcd img {
+    width: 22px;
+    height: 14px;
+    margin-left: 10px;
+    margin-right: -14px;
+    margin-top: 3px;
+    filter: invert(1);
+}
+.wmk {
+    margin-left: 12%;
+}
+
+.wmk ul li:hover {
+    /* background-color: #ea46c4;
+    color: #1a1a1a; */
+    background-color: #ea46c4;
+    color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+}
+
+.wmk ul li {
+    padding: 3px 24px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(152 75 195);
+    border: 1px solid #9f9c9c;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    margin: 2px;
+}
+header{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    
+}
+.logo img{
+    width: 120px; /* Adjust logo size */
+    height: auto;
+}
+.genre ul{ 
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.genre ul li{
+    padding: 0px 16px;
+    font-size: 13px;
+    font-family: "Source Code Pro", monospace;
+    line-height: 20px;
+    font-weight: 700;
+    position: relative;
+}
+.genre ul li a:hover{
+    color: rgb(122, 6, 151);
+}
+.genre ul li a{
+    text-decoration: none;
+    color: #474343;
+    display: flex;
+    align-items: center;
+}
+.genre ul li img {
+    width: 12px; 
+    height: auto;
+    margin-left: 4px;
+}
+.search{
+    display: flex;
+    align-items: center;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    border-radius: 24px;
+    padding: 8px 16px;
+    width: 400px;
+}
+.search input{
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    background-color: transparent;
+}
+.search button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.search button img{
+    width: 20px;
+    height: 20px;
+}
+.crp img{
+    width: 24px;
+    height: 24px;
+    margin-left: 16px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+.crp img:hover {
+    transform: scale(1.1); 
+    filter: invert(34%) sepia(83%) saturate(747%) hue-rotate(260deg) brightness(90%) contrast(95%);
+}
+h2{
+    text-align: center;
+    margin-top: 36px;
+    color: #3a3636;
+}
+h5{
+    font-weight: 600;
+    font-family: "Source Code Pro", monospace;
+    color: #4e4d4d;
+    font-size: 13px;
+    line-height: 15px;
+    margin-top: 2px;
+    margin-bottom: 6px;
+}
+.box hr {
+    border: none;
+    border-top: 1px solid #d3d1d1; /* Light gray line */
+    margin-top: -4px;
+    margin-bottom: 1px;
+}
+.box span{
+    font-weight: 400;
+    font-family: "Source Code Pro", monospace;
+    color: #6b6969;
+    font-size: 13px;
+    line-height: 23px;
+}
+ .box h3{
+    font-weight: 600;
+    font-family: "Source Code Pro", monospace;
+    color: #464545;
+    font-size: 13px;
+    /* line-height: 23px; */
+} 
+.slideshow {
+    position: relative;
+    width: 99%;
+    height: 478px;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .slide {
+    display: none;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .slide.active {
+    display: block;
+    animation: fade 1s ease-in-out;
+  }
+
+  @media (max-width: 1159px) {
+    .slideshow{
+      padding-right: 29px;
+      padding-left: 5px;
+    }
+    .slide{
+      padding-left: 10px;
+    }
+    
+  }
+  
+  @keyframes fade {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  button.prev,
+  button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1000;
+    font-size: 18px;
+    border-radius: 50%;
+  }
+  
+  button.prev {
+    left: 10px;
+  }
+  
+  button.next {
+    right: 10px;
+  }
+  
+  button.prev:hover,
+  button.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  .dots {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+  }
+  
+  .dot {
+    width: 12px;
+    height: 12px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .dot.active {
+    background-color: white;
+  }
+  
+  .cart-count {
+    position: absolute;
+    top: 25px;
+    right: 9px;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 50%;
+    padding: 1px 5px;
+    background-color: rgb(122, 6, 151);
+    color: white;
+  }
+  .wishlist-count{
+    position: absolute;
+    top: 26px;
+    right: 47px;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 50%;
+    padding: 1px 5px;
+    background-color: rgb(122, 6, 151);
+    color: white;
+  }
+
+  .login-button button{
+    padding: 3px 8px;
+    margin-left: 14px;
+    border: none;
+    border-radius: 5px;
+    background: rgb(152 75 195);
+    font-weight: 700;
+    font-size: 13px;
+    line-height: normal;
+    color: white;
+    cursor: pointer;
+    
+  }
+  .login-button a {
+    text-decoration: none !important; /* Ensures underline is removed */
+    color: white;
+}
+  

@@ -1,0 +1,24 @@
+.breadcrums {
+    display: flex;
+    align-items: center;
+    font-size: 11px;
+    /* margin: 10px 0; */
+    color: #555;
+    margin-top: -6px;
+  }
+  
+  .breadcrums a {
+    text-decoration: none;
+    color: #6b6b6b;
+    margin-right: 3px;
+  }
+  
+  .breadcrums a:hover {
+    color: black;
+  }
+  
+  .breadcrums .arrow-icon {
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+  }
